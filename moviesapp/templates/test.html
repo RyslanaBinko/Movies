@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Movies</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <style type="text/css">
+  body {
+       padding-left: 50em;
+      padding-top: 4em;
+      width: 3000em;
+      font-family: ms sans serif, Arial,
+          Times, serif;
+    color: purple;
+    background-image: url("https://static-cse.canva.com/blob/140234/Rainbow-Gradient-Pink-and-Purple-Zoom-Virtual-Background.png"); }
+  ul.navbar {
+      list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 1em;
+    left: 1em;
+    width: 19em }
+  ul.navbar li {
+    background: thistle;
+    margin: 1em 0;
+    padding: 1em;
+    border-right: 1em solid orchid }
+ .button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  background-color: bisque;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: burlywood}
+
+.button:active {
+  background-color: burlywood;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+  </style>
+
+</head>
+    <body>
+    <ul class="navbar">
+        <h2> Genres </h2>
+  <li><a href="index.html">Боевик</a>
+  <li><a href="musings.html">Драма</a>
+  <li><a href="town.html">Комедия</a>
+  <li><a href="links.html">Фантастика</a>
+</ul>
+<h2> When you don't know which movie to watch...</h2>
+<button class="button" onclick="f()">choose a movie</button>
+     <script>
+        function f(){
+            if(!document.getElementById('img'))
+            {
+                var image=document.createElement('img');
+            image.id="img";
+            image.src="https://www.imgonline.com.ua/examples/bee-on-daisy.jpg"
+            image.width="300";
+            image.height="350"
+            document.body.appendChild(image)}}
+    </script>
+<br><br><h1>Random film:</h1>
+{#<a href="http://127.0.0.1:8000/movie"></a>#}
+    </body>
+</html>

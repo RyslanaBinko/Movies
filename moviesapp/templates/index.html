@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for movie in object_list %}
+    <img src="{{ movie.picture }}" alt="{{ movie.title }}" width="300"> <br> <br>
+    Title: {{ movie.title }} <br> Genre: {% for genre in movie.genre.all %} {{ genre }} {% endfor %}<br><br>
+{% endfor %}
+</body>
+</html>
